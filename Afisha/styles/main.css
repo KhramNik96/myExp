@@ -8,7 +8,7 @@ img {
 }
 
 .container {
-  width: 1296px;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
