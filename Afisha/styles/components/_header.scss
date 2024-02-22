@@ -1,0 +1,29 @@
+.header {
+    background: #191919;
+}
+
+.header__first {
+    display: flex;
+    align-items: center;
+    height: 104px;
+}
+
+.logo {
+    width: 325px;
+    height: 12px;
+
+    margin-right: 208px;
+}
+
+.menu__list {
+    display: flex;
+    font-weight: 600;
+}
+
+.menu__item {
+    margin-right: 48px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
