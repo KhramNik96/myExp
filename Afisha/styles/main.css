@@ -36,6 +36,10 @@ a {
   color: #FFFFFF;
 }
 
+.slider-section {
+  margin-top: 60px;
+}
+
 .slider-container {
   position: relative;
   display: flex;
@@ -80,12 +84,12 @@ a {
   display: flex;
   align-items: center;
   height: 104px;
+  justify-content: space-between;
 }
 
 .logo {
   min-width: 325px;
   height: 12px;
-  margin-right: 208px;
 }
 
 .menu__list {
