@@ -22,10 +22,6 @@ img {
      object-fit: cover;
 }
 
-.wrapper__content {
-  margin: 0 20px;
-}
-
 .container {
   max-width: 1296px;
   margin: 0 auto;
@@ -87,7 +83,7 @@ a {
 }
 
 .logo {
-  width: 325px;
+  min-width: 325px;
   height: 12px;
   margin-right: 208px;
 }
@@ -99,7 +95,22 @@ a {
 
 .menu__item {
   margin-right: 48px;
+  position: relative;
+}
+.menu__item::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #FFFFFF;
+  border-radius: 1px;
+  transform: rotate(45deg);
+  right: -28px;
+  top: 6px;
 }
 .menu__item:last-child {
   margin-right: 0;
+}
+.menu__item:last-child::after {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

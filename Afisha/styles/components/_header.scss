@@ -9,7 +9,7 @@
 }
 
 .logo {
-    width: 325px;
+    min-width: 325px;
     height: 12px;
 
     margin-right: 208px;
@@ -22,8 +22,26 @@
 
 .menu__item {
     margin-right: 48px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #FFFFFF;
+        border-radius: 1px;
+        transform: rotate(45deg);
+        right: -28px;
+        top: 6px;
+    }
 
     &:last-child {
         margin-right: 0;
     }
+
+    &:last-child::after {
+        display: none;
+    }
+
 }
