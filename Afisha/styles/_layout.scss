@@ -22,6 +22,7 @@ img {
 .container {
     max-width: 1296px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 ul,li {
@@ -31,4 +32,34 @@ ul,li {
 a {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+svg {
+    display: block;
+}
+
+.section-head {
+    font-family: "Garamond", serif;
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: 48px;
+}
+
+.section-icon-wrapper {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    color: #191919;
+}
+
+.section-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 34px;
 }

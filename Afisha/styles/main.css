@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 @import './_normalize.css';
+@font-face {
+  font-family: "Garamond";
+  src: url(../font/Garamond\ bold.ttf);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,6 +28,7 @@ img {
 .container {
   max-width: 1296px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 ul, li {
@@ -34,6 +38,36 @@ ul, li {
 a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+svg {
+  display: block;
+}
+
+.section-head {
+  font-family: "Garamond", serif;
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 48px;
+}
+
+.section-icon-wrapper {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  color: #191919;
+}
+
+.section-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 34px;
 }
 
 .slider-section {
@@ -117,4 +151,89 @@ a {
 }
 .menu__item:last-child::after {
   display: none;
+}
+
+.event__item {
+  background: rgba(25, 25, 25, 0.0509803922);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 32px 60px;
+  min-width: 1076px;
+}
+
+.event__item-date {
+  font-family: "Garamond", serif;
+  font-weight: 700;
+  margin-right: 62px;
+}
+
+.event__item-date-1 {
+  width: 79px;
+  height: 90px;
+  opacity: 75%;
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event__item-date-2 {
+  opacity: 75%;
+  font-size: 32px;
+}
+
+.event__item-icon {
+  width: 320px;
+  height: 240px;
+  border-radius: 12px;
+  margin-right: 62px;
+}
+
+.event__item-info {
+  max-width: 415px;
+}
+
+.event__item-title {
+  font-family: "Garamond", serif;
+  font-weight: 700;
+  font-size: 32px;
+  height: 90px;
+}
+
+.event__item-subtitle {
+  opacity: 75%;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.event__item-options {
+  display: flex;
+}
+
+.event__item-option {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  opacity: 75%;
+}
+.event__item-option:last-child {
+  margin-right: 0;
+}
+
+.option {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+
+.btn {
+  min-width: 175px;
+  height: 51px;
+  border-radius: 50px;
+  background: #05B093;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
