@@ -1,0 +1,42 @@
+.news-calendar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-calendar {
+    margin-top: 136px;
+}
+
+.news__list {
+    margin-top: 60px;
+    display: flex;
+}
+
+.news__item {
+    max-width: 306px;
+    margin-right: 24px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.news__icon {
+    height: 204px;
+    border-radius: 12px;
+}
+
+.news__title {
+    font-family: Garamond;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 32px;
+}
+
+.news__text {
+    opacity: 75%;
+    margin-top: 24px;
+}

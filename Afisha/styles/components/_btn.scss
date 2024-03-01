@@ -7,4 +7,81 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid transparent;
+
+    &:hover {
+        background: gold;
+        box-shadow: 0 -200px 100px -120px rgb(39, 160, 80) inset;
+        animation: background 3s infinite alternate;
+      }
+      
+      @keyframes background {
+        50% {
+          background: skyblue;
+          box-shadow: 0 -200px 100px -100px yellowgreen inset;
+        }
+
+        70% {
+            background: rgb(221, 210, 58);
+            box-shadow: 0 -200px 100px -100px rgb(11, 219, 105) inset;
+          }
+      }
+}
+
+.btn--calendar {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #05B093;
+  border: 1px solid transparent;
+  position: relative;
+
+  &-left {
+    margin-right: 8px;
+  }
+
+  &-right {
+    margin-right: 70px;
+  }
+
+  &-left::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 12px;
+    top: 13px;
+    background-color: white;
+    transform: rotate(-135deg);
+  }
+
+  &-left::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    transform: rotate(135deg);
+    height: 12px;
+    background-color: white;
+    top: 22px;
+  }
+
+  &-right::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 12px;
+    top: 13px;
+    background-color: white;
+    transform: rotate(135deg);
+  }
+
+  &-right::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    transform: rotate(-135deg);
+    height: 12px;
+    background-color: white;
+    top: 22px;
+  }
 }
