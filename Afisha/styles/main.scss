@@ -4,6 +4,8 @@
     src: url(../font/Garamond\ bold.ttf);
 }
 
+
+
 @import './_normalize.css';
 @import './layout';
 
@@ -13,3 +15,8 @@
 @import './components/btn';
 @import './components/news';
 @import './components/calendar';
+@import './components/preview';
+@import './components/footer';
+@import './components/burger';
+
+@import './media';

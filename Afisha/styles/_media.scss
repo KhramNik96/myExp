@@ -1,0 +1,18 @@
+@media (max-width: 1173px) {
+    
+    .header {
+        max-width: 700px;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .menu__list {
+        flex-direction: column;
+    }
+
+    .burger {
+        display: block;
+    }
+}

@@ -1,0 +1,28 @@
+.burger {
+    display: none;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 53px;
+        height: 100px;
+        right: 3px;
+    }
+
+    &:hover + .menu{
+        display: block;
+        position: absolute;
+        right: 1px;
+        background: black;
+        top: 42px;
+    }
+}
+
+
+.burger__line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 3px;
+    border-radius: 3px;  
+}
