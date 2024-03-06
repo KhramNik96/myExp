@@ -563,6 +563,11 @@ table {
   border-radius: 3px;
 }
 
+details summary::marker {
+  display: none;
+  width: 100px;
+}
+
 @media (max-width: 1173px) {
   .header {
     max-width: 700px;

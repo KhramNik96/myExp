@@ -26,3 +26,9 @@
     margin-bottom: 3px;
     border-radius: 3px;  
 }
+
+details summary::marker {
+    display: none;
+    width: 100px;
+  }
+
